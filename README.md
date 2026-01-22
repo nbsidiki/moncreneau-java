@@ -66,7 +66,7 @@ Moncreneau client = new Moncreneau("mk_live_...");
 // Custom configuration
 Moncreneau client = new Moncreneau(
     "mk_live_...",
-    "https://mc.duckdns.org/api/v1",
+    "https://mc-prd.duckdns.org/api/v1",
     30 // timeout in seconds
 );
 ```
