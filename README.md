@@ -45,7 +45,7 @@ System.out.println(appointment.get("id")); // appt_abc123
 
 ## Documentation
 
-Full documentation: [https://docs.moncreneau.gn/sdks/java](https://docs.moncreneau.gn/sdks/java)
+Full documentation: [https://moncreneau-docs.vercel.app/docs/v1/sdks/java](https://moncreneau-docs.vercel.app/docs/v1/sdks/java)
 
 ## Features
 
@@ -66,7 +66,7 @@ Moncreneau client = new Moncreneau("mk_live_...");
 // Custom configuration
 Moncreneau client = new Moncreneau(
     "mk_live_...",
-    "https://api.moncreneau.gn/v1",
+    "https://mc.duckdns.org/api/v1",
     30 // timeout in seconds
 );
 ```
@@ -193,10 +193,10 @@ public class AppointmentController {
 
 ## Support
 
-- **Documentation**: [https://docs.moncreneau.gn](https://docs.moncreneau.gn)
+- **Documentation**: [https://moncreneau-docs.vercel.app](https://moncreneau-docs.vercel.app)
 - **Javadoc**: [https://javadoc.io/doc/com.moncreneau/moncreneau-java](https://javadoc.io/doc/com.moncreneau/moncreneau-java)
-- **Issues**: [GitHub Issues](https://github.com/moncreneau/moncreneau-java/issues)
-- **Email**: support@moncreneau.gn
+- **Issues**: [GitHub Issues](https://github.com/nbsidiki/moncreneau-java/issues)
+- **Email**: moncreneau.rdv@gmail.com
 
 ## License
 

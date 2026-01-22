@@ -28,7 +28,7 @@ public class Moncreneau {
      * @param apiKey Your Moncreneau API key (mk_test_... or mk_live_...)
      */
     public Moncreneau(String apiKey) {
-        this(apiKey, "https://api.moncreneau.gn/v1", 30);
+        this(apiKey, "https://mc.duckdns.org/api/v1", 30);
     }
 
     /**
