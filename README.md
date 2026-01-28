@@ -34,13 +34,12 @@ Moncreneau client = new Moncreneau("mk_live_YOUR_API_KEY");
 
 // Create an appointment
 Map<String, Object> data = new HashMap<>();
-data.put("departmentId", "dept_123");
+data.put("departmentId", 5L);  // Long: ID du département
 data.put("dateTime", "2026-01-20T10:00:00");
-data.put("userName", "Jean Dupont");
-data.put("userPhone", "+224621234567");
+data.put("name", "Jean Dupont");  // Nom du bénéficiaire
 
 Map<String, Object> appointment = client.appointments.create(data);
-System.out.println(appointment.get("id")); // appt_abc123
+System.out.println(appointment.get("id")); // 123
 ```
 
 ## Documentation
@@ -79,10 +78,9 @@ import java.util.HashMap;
 
 // Create
 Map<String, Object> data = new HashMap<>();
-data.put("departmentId", "dept_123");
+data.put("departmentId", 5L);  // Long: ID du département
 data.put("dateTime", "2026-01-20T10:00:00");
-data.put("userName", "Jean Dupont");
-data.put("userPhone", "+224621234567");
+data.put("name", "Jean Dupont");  // Nom du bénéficiaire
 
 Map<String, Object> appointment = client.appointments.create(data);
 
@@ -173,6 +171,7 @@ public class AppointmentController {
     @PostMapping("/appointments")
     public ResponseEntity<?> createAppointment(@RequestBody Map<String, Object> data) {
         try {
+            // data doit contenir: departmentId (Long), dateTime (String), name (String)
             Map<String, Object> appointment = client.appointments.create(data);
             return ResponseEntity.ok(appointment);
         } catch (MoncreneauException e) {
