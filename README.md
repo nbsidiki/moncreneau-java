@@ -93,10 +93,10 @@ params.put("status", "SCHEDULED");
 Map<String, Object> appointments = client.appointments.list(params);
 
 // Retrieve
-Map<String, Object> appointment = client.appointments.retrieve("appt_abc123");
+Map<String, Object> appointment = client.appointments.retrieve(123L);
 
 // Cancel
-client.appointments.cancel("appt_abc123");
+client.appointments.cancel(123L);
 ```
 
 ### Departments
